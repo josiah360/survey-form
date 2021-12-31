@@ -2,22 +2,35 @@
     box-sizing: border-box;
 }
 
-body {
+.wrapper {
     font-family: Tahoma;
     font-size: 1em;
+    padding: 2em;
 }
 
 h1,
 p {
     margin: 0 auto;
     text-align: center;
+    color: rgb(56, 56, 56);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 40px;
+    font-style: italic;
+    font-size: 1.1em;
 }
 
 form {
-    width: 45%;
+    width: 40%;
     margin: 0 auto;
     padding: 50px 30px;
     background-color: rgb(245, 245, 245);
+    border-radius: 5px;
 }
 
 fieldset {
@@ -26,20 +39,72 @@ fieldset {
 
 label {
     display: block;
-    margin-bottom: 1.4em;
-    font-weight: bold;
+    margin-bottom: 1.6em;
+    /* font-weight: 600; */
     color: rgb(94, 94, 94);
 }
 
-input {
+option,
+select {
+    font-size: 1em;
+    color:rgb(199, 199, 199);
+}
+
+input,
+select,
+textarea {
     display: block;
     width: 100%;
-    min-height:  2em;
-    padding: .7em;
+    padding: 1em;
     margin-top: 12px;
+    border-radius: 5px;
+    border: solid rgb(190, 190, 190) 1px;
 }
 
 ::placeholder {
     font-size: 1.2em;
     color:rgb(199, 199, 199);
 }
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline;
+    width: unset;
+    vertical-align: middle;
+    margin: 0;
+    margin-right: 10px;
+}
+
+/* fieldset:last-of-type label:not(:first-child) {
+    margin: 5px 0;
+} */
+
+label[class="space-top"] {
+    margin-top: 2.2rem;
+}
+
+.label-space {
+    margin: 7px 0 10px 5px;
+}
+
+.first {
+    margin-top: 3px;
+}
+
+.space-bottom {
+    margin-bottom: 13px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    max-width: 513.19px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    padding: .7em;
+    font-weight: bold;
+}
+

@@ -8,21 +8,53 @@
     </head>
 
     <body>
-        <h1>freeCodeCamp Survey Form</h1>
-        <p>Thank you for taking the time to help us improve the platform</p>
+        <div class="wrapper">
+            <h1>freeCodeCamp Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
 
-        <form>
-            <fieldset>
-                <label>Name: <input type="text" name="name" placeholder="Enter your name"></label>
-                <label>Email: <input type="text" name="name" placeholder="Enter your email"></label>
-                <label>Age (optional): <input type="text" name="name" placeholder="Age"></label>
-                <label>Which option best describes your current role? <input type="text" name="name" placeholder="Select current role"></label>
-            </fieldset>
-            <fieldset>
-                <label>Would you recommend freeCodeCamp to a friend?</label>
-            </fieldset>
+            <form>
+                <fieldset>
+                    <label>Name: <input type="text" name="name" placeholder="Enter your name" required></label>
+                    <label>Email: <input type="text" name="name" placeholder="Enter your email" required></label>
+                    <label>Age (optional): <input type="text" name="name" placeholder="Age"></label>
+                    <label>Which option best describes your current role? <input type="text" name="name" placeholder="Select current role"></label>
+                </fieldset>
 
-        </form>
+                <fieldset>
+                    <label class="space-bottom"> Would you recommend freeCodeCamp to a friend?</label>
+                    <label class="label-space first"><input type="radio" name="recommendation" value="definitely" checked>Definitely</label>
+                    <label class="label-space"><input type="radio" name="recommendation" value="maybe">Maybe</label>
+                    <label class="label-space"><input type="radio" name="recommendation" value="not-sure">Not sure</label>
 
+                    <label class="space-top">What is your favorite feature of freeCodeCamp?
+                        <select>
+                            <option>Select an option</option>
+                            <option>Challenges</option>
+                            <option>Projects</option>
+                            <option>Communities</option>
+                            <option>Open Source</option>
+                        </select>
+                    </label>
+                    <label class="space-top space-bottom">What would you like to see improved? <span class="check">(Check all that apply)</span></label>
+                    <label class="label-space first"><input type="checkbox" name="feature" value="front-end-projects" >Front-end Projects</label>
+                    <label class="label-space"><input type="checkbox" name="feature" value="back-end-projects">Back-end Projects</label>
+                    <label class="label-space"><input type="checkbox" name="feature" value="data-visualization">Data Visualization</label>
+                    <label class="label-space"><input type="checkbox" name="feature" value="challenges" >Challenges</label>
+                    <label class="label-space"><input type="checkbox" name="feature" value="open-source-community">Open Source Community</label>
+                    <label class="label-space"><input type="checkbox" name="feature" value="gitter-help-rooms">Gitter help rooms</label>
+                    <label class="label-space"><input type="checkbox" name="feature" value="videos">Videos</label>
+                    <label class="label-space"><input type="checkbox" name="feature" value="city-meetups">City Meetups</label>
+                    <label class="label-space"><input type="checkbox" name="feature" value="wiki">Wiki</label>
+                    <label class="label-space"><input type="checkbox" name="feature" value="forum">Forum</label>
+                    <label class="label-space"><input type="checkbox" name="feature" value="additional-courses">Additional Courses</label>
+
+
+                    <label class="space-top">Any comments or suggestions?<textarea></textarea></label>
+                </fieldset>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
     </body>
 </html>
