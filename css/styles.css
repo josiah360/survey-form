@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma;
+    font-size: 1em;
+}
+
+h1,
+p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+form {
+    width: 45%;
+    margin: 0 auto;
+    padding: 50px 30px;
+    background-color: rgb(245, 245, 245);
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 1.4em;
+    font-weight: bold;
+    color: rgb(94, 94, 94);
+}
+
+input {
+    display: block;
+    width: 100%;
+    min-height:  2em;
+    padding: .7em;
+    margin-top: 12px;
+}
+
+::placeholder {
+    font-size: 1.2em;
+    color:rgb(199, 199, 199);
+}
