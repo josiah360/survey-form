@@ -17,8 +17,8 @@
                     <label>Name: <input type="text" name="user-name" placeholder="Enter your name" required></label>
                     <label>Email: <input type="text" name="user-email" placeholder="Enter your email" required></label>
                     <label>Age (optional): <input type="number" name="user-number" placeholder="Age" min="18" max="120"></label>
-                    <label name="job-role">Which option best describes your current role?
-                        <select>
+                    <label >Which option best describes your current role?
+                        <select name="job-role">
                             <option value="">Select current role</option>
                             <option value="student">Student</option>
                             <option value="full-time-job">Full-time job</option>
@@ -36,7 +36,7 @@
                     <label class="label-space"><input type="radio" name="recommendation" value="not-sure">Not sure</label>
 
                     <label class="space-top" name="feature">What is your favorite feature of freeCodeCamp?
-                        <select>
+                        <select name="favorite-feature">
                             <option value="">Select an option</option>
                             <option value="challenges">Challenges</option>
                             <option value="projects">Projects</option>
@@ -58,7 +58,7 @@
                     <label class="label-space"><input type="checkbox" name="improve" value="additional-courses">Additional Courses</label>
 
 
-                    <label class="space-top">Any comments or suggestions?<textarea></textarea></label>
+                    <label class="space-top">Any comments or suggestions?<textarea placeholder="I suggest that..."></textarea></label>
                 </fieldset>
 
                 <input type="submit" value="Submit">
